@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/Roboto_Flex"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "training"
+	}
+}

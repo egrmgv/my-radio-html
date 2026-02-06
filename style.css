@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.adaptive {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+}
+
+.main {
+    background: lightgreen;
+}
+
+.sidebar {
+    background: pink;
+}
+
+.title {
+    margin: 15px;
+}
+
+@media (max-width: 1200px) {
+    .adaptive {
+        width: 1000px;
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .adaptive {
+        width: 768px;
+        grid-template-columns: 1fr 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 4.5vw;
+    }
+    .adaptive {
+    width: 480px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 6vw;
+    }
+    .adaptive {
+        width: 100%;
+
+    }
+}
